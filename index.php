@@ -147,10 +147,10 @@ if($op=="upload"){
 <legend><?=_CONFIGURA; ?><?=$msg ?></legend>
 <form name="admin" action="index.php?op=saveadmin" method="post"  >
 
-<?=_NOME_SITO; ?><input type='entry' name='sitename'  size='80' value='<?=$admin[3];?>'><br/>
-headers  <input type='entry' name='headers' size='120'  value='<?=$admin[4];?>'><br/>
+<?=_NOME_SITO; ?><input type='entry' name='sitename'  size='80' value='<?=@$admin[3];?>'><br/>
+headers  <input type='entry' name='headers' size='120'  value='<?=@$admin[4];?>'><br/>
 
-<?=_EMAIL; ?> <input type='entry' name='email' value='<?=$admin[2];?>'><?=_CONFERMA_EMAIL; ?> <input type='entry' name='confemail' value='<?=$admin[2];?>'><br/>
+<?=_EMAIL; ?> <input type='entry' name='email' value='<?=@$admin[2];?>'><?=_CONFERMA_EMAIL; ?> <input type='entry' name='confemail' value='<?=@$admin[2];?>'><br/>
 
 <?=_PASSWORD; ?>  <input type='password' name='password'> <?=_CONFERMA_PASSWORD; ?><input type='password' name='confpassword'> <input type='checkbox' name='sendpassword' ><?=_INVIA_PASSWORD; ?><br/>
 
